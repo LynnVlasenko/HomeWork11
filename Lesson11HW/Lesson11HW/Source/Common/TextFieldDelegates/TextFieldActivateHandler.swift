@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class TextFieldActivateHandler: TextFieldActivator {
+class TextFieldActivateHandler: TextFieldDelegate {
     
-    func activateTextField(with textField: UITextField) {
+    func modifyTextField(with textField: UITextField) {
         textField.isUserInteractionEnabled = true
     }
 }

@@ -12,10 +12,10 @@ class ProfileViewController: BaseViewController {
     let contentView = ProfileConentView() // add view
     
     // create delegates
-    var firstNameActivateDelegate: TextFieldActivator?
-    var lastNameActivateDelegate: TextFieldActivator?
-    var firstNameDeactivateDelegate: TextFieldDeactivator?
-    var lastNameDeactivateDelegate: TextFieldDeactivator?
+    var firstNameActivateDelegate: TextFieldDelegate?
+    var lastNameActivateDelegate: TextFieldDelegate?
+    var firstNameDeactivateDelegate: TextFieldDelegate?
+    var lastNameDeactivateDelegate: TextFieldDelegate?
     
     private var editMode = false
     

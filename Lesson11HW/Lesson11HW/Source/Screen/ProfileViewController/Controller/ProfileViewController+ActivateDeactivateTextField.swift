@@ -13,8 +13,8 @@ extension ProfileViewController {
     func activateTextFields() {
         
         setupActivateDelegales() // важливо сетапити делегат саме в місці дії - інакше не працює
-        firstNameActivateDelegate?.activateTextField(with: contentView.contentStackView.firstNameTextField)
-        lastNameActivateDelegate?.activateTextField(with: contentView.contentStackView.lastNameTextField)
+        firstNameActivateDelegate?.modifyTextField(with: contentView.contentStackView.firstNameTextField)
+        lastNameActivateDelegate?.modifyTextField(with: contentView.contentStackView.lastNameTextField)
     }
     
     func setupActivateDelegales() {
@@ -28,8 +28,8 @@ extension ProfileViewController {
     func deactivateTextFields() {
         
         setupDeactivateDelegales()
-        firstNameDeactivateDelegate?.deactivateTextField(with: contentView.contentStackView.firstNameTextField)
-        lastNameDeactivateDelegate?.deactivateTextField(with: contentView.contentStackView.lastNameTextField)
+        firstNameDeactivateDelegate?.modifyTextField(with: contentView.contentStackView.firstNameTextField)
+        lastNameDeactivateDelegate?.modifyTextField(with: contentView.contentStackView.lastNameTextField)
     }
     
     func setupDeactivateDelegales() {

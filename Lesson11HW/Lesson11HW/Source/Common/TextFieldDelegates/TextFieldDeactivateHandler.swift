@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class TextFieldDeactivateHandler: TextFieldDeactivator {
+class TextFieldDeactivateHandler: TextFieldDelegate {
     
-    func deactivateTextField(with textField: UITextField) {
+    func modifyTextField(with textField: UITextField) {
         textField.isUserInteractionEnabled = false
     }
 }
