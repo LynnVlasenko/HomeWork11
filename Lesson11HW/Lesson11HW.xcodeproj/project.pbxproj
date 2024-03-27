@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C9397422BB357B10072E02C /* ProfileConentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9397412BB357B10072E02C /* ProfileConentView.swift */; };
+		6C9397442BB35DAE0072E02C /* ProfileContentStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9397432BB35DAE0072E02C /* ProfileContentStackView.swift */; };
+		6C9397462BB43B090072E02C /* TextFieldDeactivator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9397452BB43B080072E02C /* TextFieldDeactivator.swift */; };
+		6C9397482BB43B520072E02C /* TextFieldActivator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9397472BB43B520072E02C /* TextFieldActivator.swift */; };
+		6C93974C2BB4435A0072E02C /* TextFieldDeactivateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93974B2BB443590072E02C /* TextFieldDeactivateHandler.swift */; };
+		6C93974E2BB443BC0072E02C /* TextFieldActivateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93974D2BB443BC0072E02C /* TextFieldActivateHandler.swift */; };
+		6C9397502BB458FB0072E02C /* ProfileViewController+ActivateDeactivateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93974F2BB458FA0072E02C /* ProfileViewController+ActivateDeactivateTextField.swift */; };
 		CEAE4DD82BB3086300B8E545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DD72BB3086300B8E545 /* AppDelegate.swift */; };
 		CEAE4DDA2BB3086300B8E545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DD92BB3086300B8E545 /* SceneDelegate.swift */; };
 		CEAE4DDF2BB3086300B8E545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE4DDD2BB3086300B8E545 /* Main.storyboard */; };
@@ -20,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C9397412BB357B10072E02C /* ProfileConentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConentView.swift; sourceTree = "<group>"; };
+		6C9397432BB35DAE0072E02C /* ProfileContentStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentStackView.swift; sourceTree = "<group>"; };
+		6C9397452BB43B080072E02C /* TextFieldDeactivator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDeactivator.swift; sourceTree = "<group>"; };
+		6C9397472BB43B520072E02C /* TextFieldActivator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldActivator.swift; sourceTree = "<group>"; };
+		6C93974B2BB443590072E02C /* TextFieldDeactivateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDeactivateHandler.swift; sourceTree = "<group>"; };
+		6C93974D2BB443BC0072E02C /* TextFieldActivateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldActivateHandler.swift; sourceTree = "<group>"; };
+		6C93974F2BB458FA0072E02C /* ProfileViewController+ActivateDeactivateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+ActivateDeactivateTextField.swift"; sourceTree = "<group>"; };
 		CEAE4DD42BB3086300B8E545 /* Lesson11HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson11HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAE4DD72BB3086300B8E545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAE4DD92BB3086300B8E545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +59,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C93973E2BB356EC0072E02C /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C93973F2BB357200072E02C /* Controller */,
+				6C9397402BB3574C0072E02C /* View */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		6C93973F2BB357200072E02C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEAE4DED2BB30B8F00B8E545 /* ProfileViewController.swift */,
+				6C93974F2BB458FA0072E02C /* ProfileViewController+ActivateDeactivateTextField.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6C9397402BB3574C0072E02C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C9397412BB357B10072E02C /* ProfileConentView.swift */,
+				6C9397432BB35DAE0072E02C /* ProfileContentStackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C9397512BB45BD40072E02C /* TextFieldDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				6C9397452BB43B080072E02C /* TextFieldDeactivator.swift */,
+				6C9397472BB43B520072E02C /* TextFieldActivator.swift */,
+				6C93974B2BB443590072E02C /* TextFieldDeactivateHandler.swift */,
+				6C93974D2BB443BC0072E02C /* TextFieldActivateHandler.swift */,
+			);
+			path = TextFieldDelegates;
+			sourceTree = "<group>";
+		};
 		CEAE4DCB2BB3086300B8E545 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAE4DEB2BB3091C00B8E545 /* SettingsViewController.swift */,
-				CEAE4DED2BB30B8F00B8E545 /* ProfileViewController.swift */,
+				6C93973E2BB356EC0072E02C /* ProfileViewController */,
 				CEAE4DEF2BB30BB300B8E545 /* TermsPrivacyViewController.swift */,
 				CEAE4DF12BB30BCA00B8E545 /* ContactUsViewController.swift */,
 			);
@@ -115,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAE4DF32BB30D6A00B8E545 /* BaseViewController.swift */,
+				6C9397512BB45BD40072E02C /* TextFieldDelegates */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -192,11 +245,18 @@
 			files = (
 				CEAE4DF02BB30BB300B8E545 /* TermsPrivacyViewController.swift in Sources */,
 				CEAE4DF22BB30BCA00B8E545 /* ContactUsViewController.swift in Sources */,
+				6C9397462BB43B090072E02C /* TextFieldDeactivator.swift in Sources */,
 				CEAE4DD82BB3086300B8E545 /* AppDelegate.swift in Sources */,
 				CEAE4DEE2BB30B8F00B8E545 /* ProfileViewController.swift in Sources */,
+				6C9397502BB458FB0072E02C /* ProfileViewController+ActivateDeactivateTextField.swift in Sources */,
+				6C93974E2BB443BC0072E02C /* TextFieldActivateHandler.swift in Sources */,
 				CEAE4DF42BB30D6A00B8E545 /* BaseViewController.swift in Sources */,
+				6C9397422BB357B10072E02C /* ProfileConentView.swift in Sources */,
+				6C9397482BB43B520072E02C /* TextFieldActivator.swift in Sources */,
 				CEAE4DEC2BB3091C00B8E545 /* SettingsViewController.swift in Sources */,
+				6C9397442BB35DAE0072E02C /* ProfileContentStackView.swift in Sources */,
 				CEAE4DDA2BB3086300B8E545 /* SceneDelegate.swift in Sources */,
+				6C93974C2BB4435A0072E02C /* TextFieldDeactivateHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
