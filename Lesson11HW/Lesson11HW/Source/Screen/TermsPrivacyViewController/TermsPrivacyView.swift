@@ -18,7 +18,6 @@ class TermsPrivacyView: UIView {
         textView.isEditable = false
         textView.isScrollEnabled = true
         textView.contentInset = UIEdgeInsets(top: 20, left: 16, bottom: 16, right: 16)
-        textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()
     
@@ -33,7 +32,6 @@ class TermsPrivacyView: UIView {
         button.layer.cornerRadius = 15
         button.isEnabled = false
         button.addTarget(self, action: #selector(didTabToAgreeButton), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     // MARK: - init
@@ -61,6 +59,8 @@ class TermsPrivacyView: UIView {
     }
     
     private func applyConstraints() {
+        
+        [termsPrivacyTextView, agreeButton].forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         
         let termsPrivacyTextViewConstraints = [
             termsPrivacyTextView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),

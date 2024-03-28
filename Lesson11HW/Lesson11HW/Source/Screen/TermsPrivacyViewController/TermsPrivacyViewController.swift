@@ -21,6 +21,7 @@ class TermsPrivacyViewController: BaseViewController {
         setupScrollViewDelegate()
     }
     
+    // MARK: - private
     private func addSubviews() {
         view.addSubview(termsPrivacyContentView)
     }
