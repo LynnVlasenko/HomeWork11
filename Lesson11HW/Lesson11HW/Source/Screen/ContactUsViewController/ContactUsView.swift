@@ -66,6 +66,7 @@ class ContactUsView: UIView {
     
     @objc private func didTabToSubmitButton() {
         print("Submit")
+        endEditing(true)
     }
     
     private func addSubviews() {

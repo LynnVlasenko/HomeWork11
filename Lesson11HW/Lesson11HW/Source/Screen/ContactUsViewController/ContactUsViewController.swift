@@ -18,6 +18,8 @@ class ContactUsViewController: BaseViewController {
         
         addSubviews()
         applyConstraints()
+        setupTextViewDelegate()
+        initializeHideKeyboard()
     }
     
     // MARK: - private
@@ -35,6 +37,20 @@ class ContactUsViewController: BaseViewController {
         ]
         
         NSLayoutConstraint.activate(contactUsContentViewConstraints)
+    }
+    
+    // hide keyboard with touch
+    private func initializeHideKeyboard() {
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(dismissMyKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissMyKeyboard(){
+        
+        view.endEditing(true)
     }
 }
 
