@@ -17,6 +17,9 @@
 		6C9397552BB47A410072E02C /* TextFieldCharactersChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9397542BB47A410072E02C /* TextFieldCharactersChanger.swift */; };
 		6C9397592BB49EEF0072E02C /* ProfileViewController+SetupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9397582BB49EEF0072E02C /* ProfileViewController+SetupTextField.swift */; };
 		6C93975D2BB4C0320072E02C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C93975C2BB4C0320072E02C /* Model.swift */; };
+		6CE718022BB59FF4008ED43D /* TermsPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE718012BB59FF4008ED43D /* TermsPrivacyViewController.swift */; };
+		6CE718042BB5A04D008ED43D /* TermsPrivacyViewController+ScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE718032BB5A04D008ED43D /* TermsPrivacyViewController+ScrollViewDelegate.swift */; };
+		6CE718062BB5A074008ED43D /* TermsPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE718052BB5A074008ED43D /* TermsPrivacyView.swift */; };
 		CEAE4DD82BB3086300B8E545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DD72BB3086300B8E545 /* AppDelegate.swift */; };
 		CEAE4DDA2BB3086300B8E545 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DD92BB3086300B8E545 /* SceneDelegate.swift */; };
 		CEAE4DDF2BB3086300B8E545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE4DDD2BB3086300B8E545 /* Main.storyboard */; };
@@ -24,7 +27,6 @@
 		CEAE4DE42BB3086500B8E545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAE4DE22BB3086500B8E545 /* LaunchScreen.storyboard */; };
 		CEAE4DEC2BB3091C00B8E545 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DEB2BB3091C00B8E545 /* SettingsViewController.swift */; };
 		CEAE4DEE2BB30B8F00B8E545 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DED2BB30B8F00B8E545 /* ProfileViewController.swift */; };
-		CEAE4DF02BB30BB300B8E545 /* TermsPrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DEF2BB30BB300B8E545 /* TermsPrivacyViewController.swift */; };
 		CEAE4DF22BB30BCA00B8E545 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DF12BB30BCA00B8E545 /* ContactUsViewController.swift */; };
 		CEAE4DF42BB30D6A00B8E545 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE4DF32BB30D6A00B8E545 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,9 @@
 		6C9397542BB47A410072E02C /* TextFieldCharactersChanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCharactersChanger.swift; sourceTree = "<group>"; };
 		6C9397582BB49EEF0072E02C /* ProfileViewController+SetupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileViewController+SetupTextField.swift"; sourceTree = "<group>"; };
 		6C93975C2BB4C0320072E02C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6CE718012BB59FF4008ED43D /* TermsPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPrivacyViewController.swift; sourceTree = "<group>"; };
+		6CE718032BB5A04D008ED43D /* TermsPrivacyViewController+ScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TermsPrivacyViewController+ScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		6CE718052BB5A074008ED43D /* TermsPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPrivacyView.swift; sourceTree = "<group>"; };
 		CEAE4DD42BB3086300B8E545 /* Lesson11HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson11HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAE4DD72BB3086300B8E545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAE4DD92BB3086300B8E545 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +54,6 @@
 		CEAE4DE52BB3086500B8E545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAE4DEB2BB3091C00B8E545 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CEAE4DED2BB30B8F00B8E545 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CEAE4DEF2BB30BB300B8E545 /* TermsPrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsPrivacyViewController.swift; sourceTree = "<group>"; };
 		CEAE4DF12BB30BCA00B8E545 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		CEAE4DF32BB30D6A00B8E545 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +108,16 @@
 				6C9397542BB47A410072E02C /* TextFieldCharactersChanger.swift */,
 			);
 			path = TextFieldDelegates;
+			sourceTree = "<group>";
+		};
+		6CE718002BB59F9A008ED43D /* TermsPrivacyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6CE718012BB59FF4008ED43D /* TermsPrivacyViewController.swift */,
+				6CE718032BB5A04D008ED43D /* TermsPrivacyViewController+ScrollViewDelegate.swift */,
+				6CE718052BB5A074008ED43D /* TermsPrivacyView.swift */,
+			);
+			path = TermsPrivacyViewController;
 			sourceTree = "<group>";
 		};
 		CEAE4DCB2BB3086300B8E545 = {
@@ -166,7 +180,7 @@
 			children = (
 				CEAE4DEB2BB3091C00B8E545 /* SettingsViewController.swift */,
 				6C93973E2BB356EC0072E02C /* ProfileViewController */,
-				CEAE4DEF2BB30BB300B8E545 /* TermsPrivacyViewController.swift */,
+				6CE718002BB59F9A008ED43D /* TermsPrivacyViewController */,
 				CEAE4DF12BB30BCA00B8E545 /* ContactUsViewController.swift */,
 			);
 			path = Screen;
@@ -252,9 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAE4DF02BB30BB300B8E545 /* TermsPrivacyViewController.swift in Sources */,
 				CEAE4DF22BB30BCA00B8E545 /* ContactUsViewController.swift in Sources */,
 				6C9397592BB49EEF0072E02C /* ProfileViewController+SetupTextField.swift in Sources */,
+				6CE718042BB5A04D008ED43D /* TermsPrivacyViewController+ScrollViewDelegate.swift in Sources */,
 				6C9397462BB43B090072E02C /* TextFieldDelegate.swift in Sources */,
 				CEAE4DD82BB3086300B8E545 /* AppDelegate.swift in Sources */,
 				CEAE4DEE2BB30B8F00B8E545 /* ProfileViewController.swift in Sources */,
@@ -269,6 +283,8 @@
 				6C93974C2BB4435A0072E02C /* TextFieldDeactivateHandler.swift in Sources */,
 				6C93975D2BB4C0320072E02C /* Model.swift in Sources */,
 				6C9397532BB479E70072E02C /* TextFieldChangeCharactersDelegate.swift in Sources */,
+				6CE718022BB59FF4008ED43D /* TermsPrivacyViewController.swift in Sources */,
+				6CE718062BB5A074008ED43D /* TermsPrivacyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
