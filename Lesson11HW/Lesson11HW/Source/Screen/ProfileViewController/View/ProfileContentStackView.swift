@@ -14,36 +14,39 @@ class ProfileContentStackView: UIStackView {
     let firstNameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "First Name"
-        textField.clearButtonMode = .whileEditing
+        //textField.clearButtonMode = .whileEditing
         textField.backgroundColor = .white
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
         textField.leftViewMode = .always
         return textField
     }()
     
-    private let firstNameCharacterCountIndicatorLabel: UILabel = {
+    var firstNameCharacterCountIndicatorLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
         label.font = .systemFont(ofSize: 17, weight: .regular)
         label.text = "30"
+        label.textColor = .systemGreen
+        //label.layoutMargins.right = 20
         return label
     }()
     
     let lastNameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Last Name"
-        textField.clearButtonMode = .whileEditing
+        //textField.clearButtonMode = .whileEditing
         textField.backgroundColor = .white
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
         textField.leftViewMode = .always
         return textField
     }()
 
-    private let lastNameCharacterCountIndicatorLabel: UILabel = {
+    var lastNameCharacterCountIndicatorLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
         label.font = .systemFont(ofSize: 17, weight: .regular)
         label.text = "30"
+        label.textColor = .systemGreen
         return label
     }()
     
@@ -80,9 +83,14 @@ class ProfileContentStackView: UIStackView {
         
         let labelsConstraints = [
             firstNameCharacterCountIndicatorLabel.heightAnchor.constraint(equalToConstant: 20),
-            firstNameCharacterCountIndicatorLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            lastNameCharacterCountIndicatorLabel.heightAnchor.constraint(equalToConstant: 20),
-            lastNameCharacterCountIndicatorLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
+            lastNameCharacterCountIndicatorLabel.heightAnchor.constraint(equalToConstant: 20)
+            
+            // Finding out the solution to make padding for Labels in StackView
+            // ворнінги у консолі, коли так додаю відступ для лейбли..
+            
+            //firstNameCharacterCountIndicatorLabel.layoutMarginsGuide.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 20)
+            //rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
+//            lastNameCharacterCountIndicatorLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
         ]
         
         NSLayoutConstraint.activate(labelsConstraints)

@@ -34,6 +34,8 @@ class ProfileConentView: UIView {
         contentStackView.distribution = .fill
         contentStackView.spacing = 5
         contentStackView.contentMode = .scaleToFill
+        contentStackView.isLayoutMarginsRelativeArrangement = true
+        //contentStackView.firstNameCharacterCountIndicatorLabel.layoutMargins.right = 20
         addSubview(contentStackView)
     }
 

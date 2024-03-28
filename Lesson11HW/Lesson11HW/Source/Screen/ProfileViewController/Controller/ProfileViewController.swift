@@ -9,22 +9,34 @@ import UIKit
 
 class ProfileViewController: BaseViewController {
     
-    let contentView = ProfileConentView() // add view
+    // add view
+    let contentView = ProfileConentView()
     
-    // create delegates
+    // edit mode state
+    private var editMode = false
+    
+    // create delegates to activate/deactivate TextField
     var firstNameActivateDelegate: TextFieldDelegate?
     var lastNameActivateDelegate: TextFieldDelegate?
     var firstNameDeactivateDelegate: TextFieldDelegate?
     var lastNameDeactivateDelegate: TextFieldDelegate?
     
-    private var editMode = false
+    // create delegates to setup TextField
+    let firstNameTextFieldDelegate = TextFieldChangeCharactersDelegate()
+    let lastNameTextFieldDelegate = TextFieldChangeCharactersDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // setup UI Elements
         addSubviews()
         applyConstraints()
+        
+        // setup actions for edit mode
         setupActions()
+        
+        // setup TextField Delegates
+        setupDelegates()
     }
     
     // MARK: - Setup UI Elements
@@ -38,13 +50,20 @@ class ProfileViewController: BaseViewController {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         
         let contentViewConstraints = [
-            contentView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             contentView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
             contentView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            contentView.heightAnchor.constraint(equalToConstant: 200) // чомусь не спрацьовує висота сабвьюшки
+            contentView.heightAnchor.constraint(equalToConstant: 155)
         ]
         
         NSLayoutConstraint.activate(contentViewConstraints)
+    }
+    
+    // MARK: - Setup TextField Delegates
+    
+    func setupDelegates() {
+
+        setupLastNameTextField()
+        setupFirstNameTextField()
     }
 }
 
@@ -70,8 +89,10 @@ private extension ProfileViewController {
         
         if !editMode {
             deactivateTextFields()
+            turnOffIndicatorLabel()
         } else {
             activateTextFields()
+            turnOnIndicatorLabel()
         }
     }
     
@@ -80,5 +101,19 @@ private extension ProfileViewController {
         
         editMode = !editMode
         updateRigthtBarButton()
+    }
+    
+    //MARK: - UI Changers for editMode
+    
+    func turnOnIndicatorLabel() {
+        contentView.contentStackView.firstNameCharacterCountIndicatorLabel.isHidden = false
+        contentView.contentStackView.lastNameCharacterCountIndicatorLabel.isHidden = false
+        contentView.contentStackView.spacing = 5
+    }
+    
+    func turnOffIndicatorLabel() {
+        contentView.contentStackView.firstNameCharacterCountIndicatorLabel.isHidden = true
+        contentView.contentStackView.lastNameCharacterCountIndicatorLabel.isHidden = true
+        contentView.contentStackView.spacing = 30
     }
 }
