@@ -12,30 +12,24 @@ extension ProfileViewController {
     // MARK: - Text Field Activation
     func activateTextFields() {
         
-        setupActivateDelegales() // важливо сетапити делегат саме в місці дії - інакше не працює
-        firstNameActivateDelegate?.modifyTextField(with: contentView.contentStackView.firstNameTextField)
-        lastNameActivateDelegate?.modifyTextField(with: contentView.contentStackView.lastNameTextField)
+        setupActivateDelegales()// важливо сетапити делегат саме в місці дії - інакше не працює
+        activateDelegate?.modifyTextField(with: contentView.contentStackView.firstNameTextField)
+        activateDelegate?.modifyTextField(with: contentView.contentStackView.lastNameTextField)
     }
-    
-    func setupActivateDelegales() {
-        
-        firstNameActivateDelegate = TextFieldActivateHandler()
-        lastNameActivateDelegate = TextFieldActivateHandler()
-    }
-    
     
     // MARK: - Text Field Deactivation
     func deactivateTextFields() {
         
-        setupDeactivateDelegales()
-        firstNameDeactivateDelegate?.modifyTextField(with: contentView.contentStackView.firstNameTextField)
-        lastNameDeactivateDelegate?.modifyTextField(with: contentView.contentStackView.lastNameTextField)
+        setupActivateDelegales()
+        deactivateDelegate?.modifyTextField(with: contentView.contentStackView.firstNameTextField)
+        deactivateDelegate?.modifyTextField(with: contentView.contentStackView.lastNameTextField)
     }
     
-    func setupDeactivateDelegales() {
+    // MARK: - Setup Text Field Activation/Deactivation Delegales
+    func setupActivateDelegales() {
         
-        firstNameDeactivateDelegate = TextFieldDeactivateHandler()
-        lastNameDeactivateDelegate = TextFieldDeactivateHandler()
+        activateDelegate = TextFieldActivateHandler()
+        deactivateDelegate = TextFieldDeactivateHandler()
     }
 }
 

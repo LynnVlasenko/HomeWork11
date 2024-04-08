@@ -12,6 +12,8 @@ class ContactUsViewController: BaseViewController {
     // add view
     let contactUsContentView = ContactUsView()
     
+    var textFieldSetupCharactersLimitUpTo320Delegate: TextFieldSetupLimitDelegate?
+    
     // MARK: - override
     override func viewDidLoad() {
         super.viewDidLoad()

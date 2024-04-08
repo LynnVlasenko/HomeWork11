@@ -15,15 +15,10 @@ class ProfileViewController: BaseViewController {
     // edit mode state
     private var editMode = false
     
-    // create delegates to activate/deactivate TextField
-    var firstNameActivateDelegate: TextFieldDelegate?
-    var lastNameActivateDelegate: TextFieldDelegate?
-    var firstNameDeactivateDelegate: TextFieldDelegate?
-    var lastNameDeactivateDelegate: TextFieldDelegate?
-    
-    // create delegates to setup TextField
-    let firstNameTextFieldDelegate = TextFieldChangeCharactersDelegate()
-    let lastNameTextFieldDelegate = TextFieldChangeCharactersDelegate()
+    // create delegates for TextFields
+    var activateDelegate: TextFieldDelegate?
+    var deactivateDelegate: TextFieldDelegate?
+    var textFieldSetupCharactersLimitUpTo30Delegate: TextFieldSetupLimitDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,9 +56,9 @@ class ProfileViewController: BaseViewController {
     // MARK: - Setup TextField Delegates
     
     func setupDelegates() {
-
-        setupLastNameTextField()
-        setupFirstNameTextField()
+        
+        contentView.contentStackView.firstNameTextField.delegate = self
+        contentView.contentStackView.lastNameTextField.delegate = self
     }
 }
 
